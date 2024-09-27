@@ -6,7 +6,7 @@ export default function Navbar({ title, darkMode, toggleDarkMode }) {
         <nav className={`navbar navbar-expand-lg ${darkMode ? 'bg-dark' : 'bg-body-tertiary'}`} data-bs-theme={darkMode ? 'dark' : 'light'}>
         <div className="container-fluid">
         <a className="navbar-brand" href="/">
-            <img src="/logo.png" alt="Logo" width="30" className="d-inline-block align-text-top "/>
+            <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Logo" width="30" className="d-inline-block align-text-top "/>
             <span className="mx-2">{title}</span>
         </a>
         <div className="form-check form-switch">
